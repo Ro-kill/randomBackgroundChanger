@@ -10,7 +10,7 @@ There are two bash scripts here, rbchanger.sh and bbchanger.sh. rbchanger.sh is 
 
 You must be using a firefox browser. Step one to getting this script to work is to understand the userContent.css file withing the chrome directory. You will most likely need to create this file and directory within your firefox directory. To know exactly which directory to make this directory and file inside of, go the the Troubleshooting Information for firefox, and next to Profile directory, it will give you the directory path. Make these files, and in the userContent.css file, add the folowing:
 
-'''bash
+```bash
   @-moz-document domain()
   {
     body {
@@ -18,7 +18,7 @@ You must be using a firefox browser. Step one to getting this script to work is 
       background-position: center;
     }
   }
-'''
+```
 
 this will change the background of the domain "" (home page) to the background of whatever image you choose. How bbchanger works, is it changes the imageName to a random different name of an image in your background directory. The userContent.css file, however, does not have access to the files in your home directory, so you must have and exact copy of your directory with all your backgrounds in your chrome directory with this .css file. 
 
